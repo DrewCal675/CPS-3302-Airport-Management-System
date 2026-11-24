@@ -16,7 +16,8 @@ def main():
     
     cur.execute('''CREATE TABLE IF NOT EXISTS Flight (
         FlightID INTEGER PRIMARY KEY NOT NULL,
-        Time INTEGER,
+        Time TEXT,
+        Destination TEXT,
         PlaneID INTEGER REFERENCES Plane(PlaneID)
         )''')
         
